@@ -5,7 +5,6 @@ import ProgressBar from "../ProgressBar/ProgressBar";
 
 const testData = [
   { bgcolor: "#6a1b9a", completed: 60 },
-//   { bgcolor: "#6a1b6a", completed: 90 },
 ];
 
 export default function AboutUser() {
@@ -53,7 +52,6 @@ export default function AboutUser() {
       </div>
       <div className="myEvents">
         <div className="eventsChecked">
-          {/* TODO:Napraviti sekciju sa eventovima na kojima smo prisustvovali i pravili */}
         </div>
       </div>
     </Fragment>
