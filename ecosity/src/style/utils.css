@@ -1,0 +1,22 @@
+    .justify-content-center {
+        justify-content: center;
+    }
+    
+    .align-items-center {
+        align-items: center;
+    }
+    
+    .display-flex {
+        display: flex;
+    }
+    .flex-row{
+        flex-direction: row;
+    }
+    
+    .flex-column{
+        flex-direction: column;
+    }
+    .vertical-gray-borders{
+        border-left: 1px solid gray !important;
+        border-right: 1px solid gray !important;
+    }

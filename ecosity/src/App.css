@@ -1,0 +1,8 @@
+.customNavbar-container {
+    position: fixed !important;
+    top: 0px;
+}
+
+.routes-container {
+    position: relative !important;
+}
