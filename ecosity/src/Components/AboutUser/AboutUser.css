@@ -9,6 +9,7 @@
 .about-container {
     display: flex;
     width: 80%;
+    height: 50vh;
 }
 
 .image-container {

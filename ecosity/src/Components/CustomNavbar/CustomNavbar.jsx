@@ -17,10 +17,7 @@ export default function CustomNavbar() {
               <CustomLink to="/" className="link">Home</CustomLink>
             </Nav.Link>
             <Nav.Link>
-              <CustomLink to="/myevents" className="link">My events</CustomLink>
-            </Nav.Link>
-            <Nav.Link>
-              <CustomLink to="/mapview" className="link">Map</CustomLink>
+              <CustomLink to="/forest" className="link">Forest</CustomLink>
             </Nav.Link>
             <Nav.Link>
               <CustomLink to="/profile" className="link" className="linkProfile">Profile</CustomLink>

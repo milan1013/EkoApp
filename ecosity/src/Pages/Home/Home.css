@@ -4,6 +4,9 @@
     ;
     align-items: center;
     width: 100%;
-    height: 230vh;
-    background-color: #e0e0e0;
+    background-color: #c6c0c0;
+}
+
+.add-post-event-button {
+    margin-top: 12px;
 }

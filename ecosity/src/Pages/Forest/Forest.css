@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.forest-container {
+    width: 78.9vw;
+    height: 100vh;
+    background-image: url("http://clipground.com/images/ground-clipart-1.jpg");
+    display: flex;
+    background-color: rgb(182, 191, 217);
+    position: absolute;
+}

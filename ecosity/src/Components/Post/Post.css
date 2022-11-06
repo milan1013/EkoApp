@@ -5,7 +5,7 @@
     width: 50vw;
     border-radius: 12px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    z-index: 2;
 }
 
 .post-header {
@@ -22,10 +22,12 @@
 .post-image-container>img {
     max-width: 45vw;
 }
-.post-creator-name{
-  font-weight: bold;
-  margin: 0 32px;
+
+.post-creator-name {
+    font-weight: bold;
+    margin: 0 32px;
 }
+
 .post-description {
     font-size: 1rem;
     margin: 0 32px;
@@ -48,6 +50,17 @@
 .post-footer-button:hover {
     background-color: #0000001a;
 }
-.post-footer-button-icon{
-  margin: 0 8px;
+
+.post-footer-button-icon {
+    margin: 0 8px;
+}
+
+.comment-section {
+    margin-top: -12px;
+    z-index: 0;
+    padding-top: 21px;
+    padding-left: 32px;
+    background-color: #fefefe;
+    
+    border-radius: 0 0 12px 12px;
 }
