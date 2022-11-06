@@ -1,12 +1,10 @@
 import { Fragment } from "react";
 import CustomNavbar from "./Components/CustomNavbar/CustomNavbar"
-import CustomCard from "./Components/Card/CustomCard";
-import Profile from "./Pages/Profile";
-import MapView from "./Pages/MapView";
+import Profile from "./Pages/Profile/Profile";
+import Forest from "./Pages/Forest/Forest";
 import Home from "./Pages/Home/Home";
-import MyEvents from "./Pages/MyEvents";
-import Register from "./Pages/Login/Register";
-import Login from "./Pages/Login/login/Login.jsx";
+import Register from "./Pages/Register/Register";
+import Login from "./Pages/Login/Login";
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
@@ -22,14 +20,13 @@ function App() {
         Routes className = "routes-container" >
         <
         Route path = "/"
-        element = { < Home / > }
-        />  <Route path = "/myevents
-        " element = { < MyEvents /> } / > <
-        Route path = "/mapview"
-        element = { < MapView / > }
+        element = { < Home />}
+        />   <
+        Route path = "/forest"
+        element = { < Forest /> }
         />  <
         Route path = "/profile"
-        element = { < Profile / > }
+        element = { < Profile /> }
         />  <
         Route path = "/register"
         element = { < Register / > }

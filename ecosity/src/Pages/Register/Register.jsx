@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import {Outlet,Link, Navigate, useNavigate} from "react-router-dom";
+import axios from "axios";
+
+import Urls from "../../Constants/Urls"
 import FormInput from "../../Components/FormInput/FormInput";
 import "./Register.css";
-import {Outlet,Link} from "react-router-dom";
 
 const Register = () => {
+  let navigate = useNavigate();
   const [values, setValues] = useState({
+    firstName: "",
+    lastName: "",
     username: "",
     password: "",
     confirmPassword: "",
@@ -12,8 +18,7 @@ const Register = () => {
 
   const inputs = [
     {
-      id: 1,
-      name: "First Name",
+      name: "firstName",
       type: "text",
       placeholder: "First Name",
       errorMessage:
@@ -23,8 +28,7 @@ const Register = () => {
       required: true,
     },
     {
-      id: 2,
-      name: "Last Name",
+      name: "lastName",
       type: "text",
       placeholder: "Last Name",
       errorMessage:
@@ -34,8 +38,7 @@ const Register = () => {
       required: true,
     },
     {
-      id: 3,
-      name: "Username",
+      name: "username",
       type: "text",
       placeholder: "Username",
       errorMessage:
@@ -45,7 +48,6 @@ const Register = () => {
       required: true,
     },
     {
-      id: 4,
       name: "password",
       type: "password",
       placeholder: "Password",
@@ -56,7 +58,6 @@ const Register = () => {
       required: true,
     },
     {
-      id: 5,
       name: "confirmPassword",
       type: "password",
       placeholder: "Confirm Password",
@@ -68,21 +69,38 @@ const Register = () => {
     },
   ];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("NEsto: ", values);
+    delete values.confirmPassword;
+    console.log("NEsto: ", values);
+    let response;
+    try {
+      response = await axios.post(Urls.REGISTER_URL , values);
+    } catch (error) {
+      console.error(error);
+    }
+      console.log(response.status);
+      if(response.status === 201)
+        navigate("/login");
   };
 
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
+  // useEffect(() => {
+  //   if(isRegistred)
+  //     retrun ;
+  // }, [isRegistred])
+
   return (
     <div className="register-app">
       <form onSubmit={handleSubmit} className="register-form">
         <h1>Register</h1>
-        {inputs.map((input) => (
+        {inputs.map((input, index) => (
           <FormInput
-            key={input.id}
+            key={index}
             {...input}
             value={values[input.name]}
             onChange={onChange}
