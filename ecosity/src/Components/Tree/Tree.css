@@ -35,15 +35,6 @@ body {
 }
 
 
-/* .forest-container {
-    width: 100vw; 
-    height: 70vh;
-    background-image: url("http://clipground.com/images/ground-clipart-1.jpg");
-    display: flex;
-    background-color: rgb(93, 84, 117);
-    position: absolute;
-}  */
-
 .trunk,
 .branch {
     border-radius: 25px;

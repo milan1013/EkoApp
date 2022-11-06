@@ -5,6 +5,7 @@ export default function Tree() {
   return (
     <div class="canvas">
       <div className="forest-container">
+      <span className="level">Current level:2</span>
   <div class="tree">
     <div class="trunk">
       <div class="branch">
