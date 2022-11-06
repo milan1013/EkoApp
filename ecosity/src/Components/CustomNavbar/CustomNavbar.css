@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightGreen: #628b48;
+    --darkGreen: #214e34;
+}
+
+.nav-container {
+    background-color: var(--darkGreen) !important;
+    height: 10vh !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+}
+
+.me-auto {
+    gap: 2rem;
+}
+
+
+ .logo {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none !important;
+    color: white !important;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.linkRegister {
+    text-decoration: none !important;
+    color: white !important;
+    font-family: monospace;
+    font-size: 1.2rem;
+    position: relative;
+    left: 40em;
+}
+
+.linkProfile {
+    text-decoration: none !important;
+    color: white !important;
+    font-family: monospace;
+    font-size: 1.2rem;
+    position: relative;
+    left: 40em;
+}
