@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import AboutUser from "../Components/AboutUser/AboutUser";
 
-export default function Profile(){
-    return (
-        <>
-        <h1>Profile</h1>
-        </>
-    )
+export default function Profile() {
+  return (
+    <>
+      <AboutUser />
+    </>
+  );
 }
